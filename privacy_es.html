@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Pixel Fake</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px; line-height: 1.7; color: #1a1a1a; background: #fff;
+      max-width: 780px; margin: 0 auto; padding: 48px 24px 80px;
+    }
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; color: #111; }
+    h2 { font-size: 1.2rem; font-weight: 600; margin-top: 40px; margin-bottom: 12px; color: #111; }
+    p { margin-bottom: 14px; }
+    ul { margin: 0 0 14px 24px; }
+    li { margin-bottom: 6px; }
+    .meta { font-size: 0.9rem; color: #666; margin-bottom: 36px; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #f5f5f7; border-left: 4px solid #0066cc;
+      padding: 16px 20px; border-radius: 4px; margin: 24px 0;
+    }
+    footer { margin-top: 64px; font-size: 0.85rem; color: #888; border-top: 1px solid #eee; padding-top: 24px; }
+  </style>
+</head>
+<body>
+
+  <h1>Política de Privacidad</h1>
+  <p class="meta">
+    Aplicación: <strong>Pixel Fake</strong> &nbsp;·&nbsp;
+    Desarrollada por: <strong>Cervena Software</strong> &nbsp;·&nbsp;
+    Última actualización: <strong>Junio 2026</strong>
+  </p>
+
+  <div class="highlight">
+    <strong>Resumen en lenguaje simple:</strong> Pixel Fake analiza imágenes para detectar si fueron
+    generadas por IA. Las imágenes que analizás <strong>nunca se almacenan en nuestros servidores</strong>.
+    Solo recopilamos los datos mínimos necesarios para que la app funcione. Si elegís no compartir datos
+    de uso, la app funciona exactamente igual.
+  </div>
+
+  <h2>1. Quiénes somos</h2>
+  <p>
+    Pixel Fake es desarrollada y operada por <strong>Cervena Software</strong>, con domicilio en la
+    Ciudad Autónoma de Buenos Aires, República Argentina. Para cualquier consulta sobre privacidad,
+    podés escribirnos a
+    <a href="mailto:cervenasoftware@gmail.com">cervenasoftware@gmail.com</a>.
+  </p>
+
+  <h2>2. Qué datos recopilamos y por qué</h2>
+
+  <p><strong>2.1 Datos de cuenta</strong></p>
+  <p>
+    Para crear tu cuenta necesitamos tu dirección de correo electrónico y una contraseña.
+    Estos datos se almacenan de forma segura en Firebase Authentication (Google LLC) y se usan
+    exclusivamente para identificarte y proteger tu cuenta.
+  </p>
+
+  <p><strong>2.2 Datos de suscripción</strong></p>
+  <p>
+    La gestión de suscripciones y pagos se realiza a través de Apple App Store, Google Play
+    o RevenueCat Inc. Nosotros recibimos confirmación del estado de tu suscripción (activa,
+    cancelada, etc.) pero <strong>nunca tenemos acceso a tu información de tarjeta de crédito
+    ni datos de pago</strong>. Esos datos son manejados exclusivamente por Apple, Google
+    o RevenueCat según corresponda.
+  </p>
+
+  <p><strong>2.3 Imágenes analizadas</strong></p>
+  <p>
+    Las imágenes que enviás para análisis se transmiten de forma encriptada (HTTPS) a nuestro
+    backend, donde son procesadas por el servicio Sightengine
+    (<a href="https://sightengine.com" target="_blank" rel="noopener">sightengine.com</a>).
+    <strong>Las imágenes originales no se almacenan en ningún servidor.</strong>
+    Guardamos únicamente un código hash criptográfico (SHA-256) del resultado del análisis en
+    caché por hasta 30 días, con el fin de evitar procesar la misma imagen dos veces y
+    optimizar el uso de la app. Este hash no permite reconstruir la imagen original.
+  </p>
+
+  <p><strong>2.4 Historial de análisis</strong></p>
+  <p>
+    El historial de tus análisis (puntuación, fecha, miniatura reducida) se guarda
+    <strong>localmente en tu dispositivo</strong> usando almacenamiento seguro. No sincronizamos
+    este historial con ningún servidor. Si desinstalás la app o eliminás tu cuenta, el historial
+    local se borra definitivamente.
+  </p>
+
+  <p><strong>2.5 Datos de uso y diagnóstico (opt-in)</strong></p>
+  <p>
+    Solo si vos lo aceptás explícitamente durante el onboarding o en Configuración, recopilamos
+    datos anónimos de uso (por ejemplo, qué funciones usás, cuántos análisis realizás por sesión)
+    mediante Firebase Analytics, y datos de diagnóstico de errores mediante Firebase Crashlytics.
+    Estos datos son completamente anónimos y se usan para mejorar la app.
+    <strong>Si no aceptás, no recopilamos ningún dato de uso ni diagnóstico.</strong>
+    Podés cambiar esta preferencia en cualquier momento desde Configuración → Privacidad.
+  </p>
+
+  <p><strong>2.6 Datos técnicos básicos</strong></p>
+  <p>
+    Para el correcto funcionamiento de la app, nuestro backend registra datos mínimos
+    de operación como: identificador de usuario (anónimo, generado por Firebase), cantidad de
+    análisis realizados en el mes, y marcas de tiempo necesarias para el control de cuota y
+    rate limiting. Estos datos no incluyen información personal identificable más allá del
+    email de tu cuenta.
+  </p>
+
+  <h2>3. Cómo usamos tus datos</h2>
+  <ul>
+    <li>Proveer y mantener el servicio de detección de imágenes generadas por IA.</li>
+    <li>Gestionar tu cuenta, suscripción y período de prueba gratuito.</li>
+    <li>Controlar el uso justo del servicio (límite mensual de análisis y rate limiting).</li>
+    <li>Responder a tus consultas de soporte.</li>
+    <li>Mejorar la app mediante datos anónimos de uso, solo si diste tu consentimiento.</li>
+  </ul>
+  <p>
+    <strong>No vendemos, alquilamos ni cedemos tus datos personales a terceros</strong>
+    con fines comerciales o publicitarios.
+  </p>
+
+  <h2>4. Terceros que acceden a datos</h2>
+  <p>Para operar el servicio utilizamos los siguientes proveedores de confianza:</p>
+  <ul>
+    <li>
+      <strong>Google Firebase</strong> (Firebase Authentication, Firestore, Cloud Functions,
+      Analytics, Crashlytics) — almacenamiento de cuenta, backend y, si aceptás, analytics y
+      diagnóstico. Política de privacidad:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+    </li>
+    <li>
+      <strong>Sightengine</strong> — servicio de análisis de imágenes por IA. Las imágenes se
+      envían a Sightengine para su clasificación y no son retenidas por este servicio más allá
+      del procesamiento inmediato. Política de privacidad:
+      <a href="https://sightengine.com/privacy" target="_blank" rel="noopener">sightengine.com/privacy</a>
+    </li>
+    <li>
+      <strong>RevenueCat</strong> — gestión de suscripciones. Política de privacidad:
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>
+    </li>
+    <li>
+      <strong>Apple Inc.</strong> / <strong>Google LLC</strong> — procesamiento de pagos y
+      distribución de la app. Sus políticas de privacidad se aplican a las transacciones
+      realizadas a través de sus respectivas tiendas.
+    </li>
+  </ul>
+
+  <h2>5. Retención de datos</h2>
+  <ul>
+    <li>Datos de cuenta: mientras tu cuenta esté activa.</li>
+    <li>Caché de análisis (hash): hasta 30 días desde el último acceso.</li>
+    <li>Historial local: hasta que lo eliminés manualmente o desinstalés la app.</li>
+    <li>Datos de suscripción: según los plazos legales y comerciales aplicables.</li>
+    <li>
+      Al eliminar tu cuenta desde la app, todos tus datos en nuestros servidores se borran
+      en un plazo máximo de 30 días.
+    </li>
+  </ul>
+
+  <h2>6. Tus derechos</h2>
+  <p>
+    De acuerdo con la Ley N° 25.326 de Protección de los Datos Personales (Argentina) y
+    principios del RGPD (Unión Europea), tenés derecho a:
+  </p>
+  <ul>
+    <li><strong>Acceder</strong> a los datos personales que tenemos sobre vos.</li>
+    <li><strong>Rectificar</strong> datos incorrectos o incompletos.</li>
+    <li><strong>Eliminar</strong> tu cuenta y todos tus datos (botón disponible en Configuración → Mi cuenta).</li>
+    <li><strong>Exportar</strong> tus datos en formato JSON (disponible en Configuración → Mi cuenta).</li>
+    <li><strong>Retirar el consentimiento</strong> de analytics en cualquier momento desde Configuración → Privacidad.</li>
+    <li><strong>Oponerte</strong> al procesamiento de tus datos contactándonos.</li>
+  </ul>
+  <p>
+    Para ejercer cualquiera de estos derechos, escribinos a
+    <a href="mailto:cervenasoftware@gmail.com">cervenasoftware@gmail.com</a>.
+  </p>
+
+  <h2>7. Seguridad</h2>
+  <p>
+    Implementamos medidas técnicas y organizativas para proteger tus datos:
+    todas las comunicaciones usan HTTPS/TLS; las claves de API viven exclusivamente
+    en el backend (nunca en la app); el acceso a los datos está protegido por
+    Firebase Authentication y reglas de seguridad de Firestore; usamos Firebase App Check
+    para verificar que las solicitudes provienen de versiones legítimas de la app.
+  </p>
+
+  <h2>8. Privacidad de menores</h2>
+  <p>
+    Pixel Fake no está dirigida a menores de 13 años. No recopilamos intencionalmente datos
+    personales de niños menores de 13 años. Si tenés conocimiento de que un menor nos ha
+    proporcionado datos personales, contactanos para eliminarlos.
+  </p>
+
+  <h2>9. Cambios a esta política</h2>
+  <p>
+    Podemos actualizar esta Política de Privacidad periódicamente. Te notificaremos de cambios
+    significativos mediante un aviso en la app o por email. La fecha de la última actualización
+    siempre está visible al inicio de este documento.
+  </p>
+
+  <h2>10. Contacto</h2>
+  <p>
+    Para consultas, ejercicio de derechos o cualquier inquietud sobre privacidad:
+  </p>
+  <ul>
+    <li>Email: <a href="mailto:cervenasoftware@gmail.com">cervenasoftware@gmail.com</a></li>
+    <li>Empresa: Cervena Software</li>
+    <li>Domicilio: Ciudad Autónoma de Buenos Aires, República Argentina</li>
+  </ul>
+
+  <footer>
+    &copy; 2026 Cervena Software · Pixel Fake ·
+    <a href="terms_es.html">Términos de Uso</a> ·
+    <a href="privacy_en.html">Privacy Policy (English)</a>
+  </footer>
+
+</body>
+</html>
